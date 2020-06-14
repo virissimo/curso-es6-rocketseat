@@ -27,5 +27,23 @@ var TodoList = /*#__PURE__*/function () {
 var minhaLista = new TodoList();
 
 document.getElementById('novoTodo').onclick = function () {
-  minhaLista.addTodo();
+  minhaLista.addTodo(document.getElementById('todoItem').value);
+  console.log(this.todos);
 };
+
+var Matematica = /*#__PURE__*/function () {
+  function Matematica() {
+    _classCallCheck(this, Matematica);
+  }
+
+  _createClass(Matematica, null, [{
+    key: "soma",
+    value: function soma(a, b) {
+      return a + b;
+    }
+  }]);
+
+  return Matematica;
+}();
+
+console.log(Matematica.soma(1, 2));
